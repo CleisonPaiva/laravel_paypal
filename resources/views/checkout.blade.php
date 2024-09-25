@@ -28,11 +28,11 @@
   <div class="row mt-2">
     <div class="col-12">
       <div class="links h5">
-        <a class="text-decoration-none mx-3" href="https://edlin.xyz/website" target="_blank">Home</a>
+   {{--      <a class="text-decoration-none mx-3" href="https://edlin.xyz/website" target="_blank">Home</a>
         <a class="text-decoration-none mx-3" href="https://edlin.xyz/portfolio" target="_blank">Portfolio</a>
-        <a class="text-decoration-none mx-3" href="https://edlin.xyz/contact" target="_blank">Contact</a>
-        <a class="text-decoration-none mx-3" href="https://edlin.xyz/linkedin" target="_blank">LinkedIn</a>
-        <a class="text-decoration-none mx-3" href="https://edlin.xyz/github/paypal-laravel" target="_blank">GitHub</a>
+        <a class="text-decoration-none mx-3" href="https://edlin.xyz/contact" target="_blank">Contact</a> --}}
+        <a class="text-decoration-none mx-3" href="https://www.linkedin.com/in/cleison-paiva-4a72241b0/" target="_blank">LinkedIn</a>
+        <a class="text-decoration-none mx-3" href="https://github.com/CleisonPaiva/laravel_paypal" target="_blank">GitHub</a>
       </div>
     </div>
   </div>
@@ -46,13 +46,9 @@
                                                                 target="_blank">PayPal</a>
             checkout form where you can enter real credit / debit card details and send me money.</p>
 
-          <p>My purpose is to demonstrate building a <a href="https://laravel.com/docs/10.x/"
-                                                        target="_blank">Laravel</a> / <a
-              href="https://developer.paypal.com/docs/checkout/" target="_blank">PayPal</a> app in 5 minutes.</p>
+    
 
-          <p>You can see me building this app on <a href="https://edlin.xyz/youtube/paypal-laravel"
-                                                    target="_blank">YouTube</a>
-            and view the <a href="https://edlin.xyz/github/paypal-laravel"
+          <p>You can see view the <a href="https://github.com/CleisonPaiva/laravel_paypal"
                             target="_blank">source code</a>.</p>
 
           <p class="text-danger">
@@ -74,11 +70,11 @@
       <div class="row mt-3">
         <div class="col-12 col-lg-6 offset-lg-3">
           <div class="input-group">
-            <span class="input-group-text">£</span>
+            <span class="input-group-text">$</span>
             <input type="text"
                    class="form-control"
                    id="paypal-amount"
-                   value="10"
+                   value="50"
                    aria-label="Amount (to the nearest pound)">
             <span class="input-group-text">.00</span>
           </div>
@@ -88,12 +84,6 @@
       <div class="row mt-3">
         <div class="col-12 col-lg-6 offset-lg-3" id="payment_options"></div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 mt-3 mb-3">
-      Made with love, by <a href="https://www.rossedlin.com/" target="_blank">Ross Edlin</a> from <a
-        href="https://www.codewithross.com/" target="_blank">Code with Ross</a>.
     </div>
   </div>
 </div>
@@ -114,7 +104,7 @@
         .then((order_details) => {
           console.log(order_details);
           document.getElementById("paypal-success").style.display = 'block';
-          //paypal_buttons.close();
+    
         })
         .catch((error) => {
           console.log(error);
